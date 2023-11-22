@@ -1,0 +1,203 @@
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+body {
+    font-family:"Roboto","sans-serif";
+}
+.btn-main {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+}
+
+.btn-main:hover {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.btn-main:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+} 
+/* Start Navber */
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .container .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .container .navbar-nav .nav-link.active,
+.navbar .container .navbar-nav .nav-link:focus,
+.navbar .container .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+.navbar .container .search {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: green;
+}
+/* End Navber */
+/* Start Landing */
+.landing {
+    background-color: var(--dark-color);
+    height: calc(100vh - 71.98px);
+}
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .row h4 {
+    color: var(--yellow-color);
+}
+/* End Features */
+/* Start Our Work */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul .active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li:not(.active):hover  {
+    color:var(--red-color);
+}
+.our-work .box {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+.our-work .box::before {
+    position: absolute;
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color: rgb(51 209 204 / 90%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    transform: translateX(calc(-100% - 5px));
+    transition: .5s;
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+.our-work .last:focus {
+    outline:var(--green-color);
+}
+/* End Our Work */
+/* Start Stuff */
+.stuff .description {
+    max-width: 500px;
+}
+/* End Stuff */
+/* Start Team  */
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .row h4 {
+    background-color: var(--green-color);
+}
+/* End Team  */
+/* Start techs */
+.project {
+    background-color: var(--dark-color);
+}
+/* End techs */
+/* Start Our Blog */
+.our-blog .box {
+    border: 1px solid #777;
+    border-radius: 10px;
+}
+/* End Our Blog */
+/* Start Subscrible */
+.subscrible {
+    background-color: var(--yellow-color);
+}
+.subscrible input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscrible input[type="submit"] {
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+}
+.subscrible input[type="text"]:focus {
+    outline: none;
+}
+.subscrible ::placeholder {
+    color: white;
+    caret-color: white;
+}
+/* End Subscrible */
+/* Start Footer  */
+footer {
+    background-color: var(--dark-color);
+}
+footer .container .copyright > span {
+    color: var(--green-color);
+}
+footer .container .copyright  div span {
+    color: var(--yellow-color);
+}
+footer .container .contact svg {
+    width: 20px;
+    height: 20px;
+}
+footer .youtube {
+    background-color:#ff0000;
+}
+footer .facebook {
+  background-color:#1877f2;
+}
+footer .linkedin {
+    background-color: #0077b5;
+}
+footer .twitter {
+    background-color: #1da1f2;
+}
+/* End Footer  */
